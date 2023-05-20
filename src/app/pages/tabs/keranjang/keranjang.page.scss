@@ -1,0 +1,24 @@
+ion-card .header 
+{ 
+  display: flex; 
+  justify-content: space-between; 
+  flex-direction: row; 
+  background-color: #E8F6EF; 
+  margin-bottom: 10px; 
+  align-items: center; 
+} 
+ 
+ion-card ion-card-content .body 
+{ 
+  display: flex; 
+} 
+ion-card ion-card-content .body .teks 
+{ 
+  margin-left: 20px; 
+} 
+ion-card ion-card-content .body .image img 
+{ 
+  width: 100px; 
+  height: 80px; 
+  border-radius: 25%; 
+}

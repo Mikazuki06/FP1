@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Daftar Menu</ion-title>
+    <ion-icon name="arrow-back" routerLink="/tabs/home"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card> 
+    <ion-card-header class="header"> 
+      <div> 
+        <ion-card-subtitle class="judul">Toko Upin</ion-card-subtitle> 
+      </div> 
+    </ion-card-header> 
+   
+    <ion-card-content> 
+      <div class="body"> 
+        <div class="image"> 
+          <img src="../../../../assets/images/ayampnyt.jpeg" alt=""> 
+        </div> 
+        <div class="teks"> 
+          <div> 
+            <span>Ayam Penyet</span> 
+          </div> 
+          <div> 
+            <span> Rp. 12000</span> 
+          </div> 
+        </div> 
+      </div> 
+    </ion-card-content> 
+    <ion-button expand="block" fill="outline" shape="round" routerLink="/detailproduct">
+      Check
+    </ion-button>
+  </ion-card>
+</ion-content>

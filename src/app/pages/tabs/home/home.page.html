@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-searchbar animated="true" placeholder="Animated"></ion-searchbar>
+
+  <swiper-container 
+  #swiper
+  (afterinit)="swiperReady()"
+  (slidechange)="swiperSlideChanged($event)"
+  [loop]="true"
+  [slidesPerview]="1.2"
+  [initialSlides]="1"
+  [autoplay]="true"
+  [spaceBetween]="20">
+    <swiper-slide *ngFor="let image of images">
+      <img [src]="image" />
+    </swiper-slide>
+  </swiper-container>
+
+  <div class="topic">
+    Selamat Datang
+  </div>
+
+  <ion-card>
+    <div>
+      <img class="image" routerLink="/product" src="../../../../assets/images/shop2.jpg" />
+    </div>
+    <ion-card-header>
+      <ion-card-subtitle>Jln. Ubad <br>
+        08332352776 <br>
+      </ion-card-subtitle>
+      <ion-card-title>Toko Upin</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

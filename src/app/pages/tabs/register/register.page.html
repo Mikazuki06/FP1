@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <div id="header">
+    <div id="app-bar">
+      <ion-icon name="arrow-back" routerLink="/tabs/welcome"></ion-icon>
+      <div id="logo">
+        <img src="assets/images/logosvv.jpeg" alt=""/>
+      </div>
+    </div>
+
+    <h1>Sign Up</h1>
+    <p>Halo Senang Bertemu Dengan Anda</p>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <ion-item>
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-input type="text" placeholder="Full name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="mail"></ion-icon>
+          <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed"></ion-icon>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" routerLink="/tabs/home">
+          Log In
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="sign-up">
+      <div>
+        Sudah Punya Account? 
+      </div>
+      <div>
+        <ion-button color="dark" fill="clear" routerLink="/tabs/login" color="primary" routerDirection="forward">Sign In</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
